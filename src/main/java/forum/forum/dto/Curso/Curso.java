@@ -1,8 +1,9 @@
 package forum.forum.dto.Curso;
 
 public enum Curso {
-JAVA,
+    JAVA,
     JAVASCRIPT,
     PYTHON,
-    DATA
+    DATA,
+
 }

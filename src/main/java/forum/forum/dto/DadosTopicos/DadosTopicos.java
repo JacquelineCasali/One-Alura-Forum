@@ -3,6 +3,7 @@ package forum.forum.dto.DadosTopicos;
 
 import forum.forum.dto.Curso.Curso;
 import forum.forum.dto.Status.Status;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
@@ -10,9 +11,9 @@ import jakarta.validation.constraints.NotNull;
 
 public record DadosTopicos(
         // faz a validação @notblack não é nulo nem vazio
-        @NotBlank
+        @NotBlank(message = "Titulo é obrigatório")
         String titulo,
-        @NotBlank
+        @NotBlank(message = "Campo mensagem é obrigatório")
         String mensagem,
         @NotNull
         Status status,

@@ -1,6 +1,7 @@
-package forum.forum.Topico;
+package forum.forum.domain.Topico;
 
 import forum.forum.dto.Curso.Curso;
+import forum.forum.dto.DadosTopicos.DadosAtualizarTopicos;
 import forum.forum.dto.DadosTopicos.DadosTopicos;
 import forum.forum.dto.Status.Status;
 import jakarta.persistence.*;
@@ -32,20 +33,38 @@ public class Topico
  private  String autor;
 
  @Enumerated(EnumType.STRING)
- private Curso curso;
-
+ private Curso Curso;
+ private  boolean ativo;
  public Topico(DadosTopicos dados) {
+
+  this.ativo=true;
   this.titulo=dados.titulo();
   this.mensagem =dados.mensagem();
   this.dataCriacao = LocalDateTime.now();
   this.status=dados.status();
   this.autor=dados.autor();
-  this.curso = dados.curso();
+  this.Curso = dados.curso();
+
+ }
+
+ public void atualizarInformacoes(DadosAtualizarTopicos dados) {
+  if(dados.titulo() !=null){
+   this.titulo= dados.titulo();
+  }
+
+  if(dados.mensagem() !=null){
+   this.mensagem= dados.mensagem();
+  }
+  if(dados.status() !=null){
+   this.status = dados.status();
+  }
+
+ }
 
 
 
 
-
-
+ public void excluir() {
+  this.ativo=false;
  }
 }

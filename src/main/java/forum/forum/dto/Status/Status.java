@@ -5,4 +5,8 @@ public enum Status {
     NAO_SOLUCIONADO,
     SOLUCIONADO,
     FECHADO;
+
+
 }
+
+
