@@ -2,6 +2,8 @@
 
 ## Layout do projeto
 
+
+
 <!-- imagem  -->
 
 ## Descrição do projeto
@@ -15,10 +17,10 @@ Criação de tópicos: Os usuários podem criar novos tópicos de discussão, fo
 
 ✔️ Autenticação de Usuários: Os usuários registrados podem fazer login na plataforma usando suas credenciais.
 
-✔️ `Criar um tópico` 
-✔️ `Listar tópicos`
+✔️ `Criar um tópico`
+✔️` Listar tópicos`
 ✔️ `Detalhar um tópico` 
-✔️ `Desativar um tópico`
+✔️` Desativar um tópico`
 
 # 📁 Acessar e rodar o  projeto 
 
@@ -37,12 +39,12 @@ http://localhost:8080/swagger-ui/index.html
 Agora é só testar as funcionalidades do projeto. Não se esqueça de se registrar e fazer login para se autenticar na plataforma. Toda comunicação entre os endpoins é feita via token JWT.
 
 ## Tecnologias utilizadas
--- Java 
--- MySql Connector 
--- Maven
--- Lombok
--- Spring Boot 3
--- Postman
+`-- Java` 
+`-- MySql Connector ` 
+`-- Maven` 
+`-- Lombok` 
+`-- Spring Boot 3` 
+`-- Postman` 
 
 # Licença
 The MIT License (MIT)
