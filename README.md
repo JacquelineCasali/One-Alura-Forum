@@ -1,53 +1,76 @@
 ## Oracle Next Educatio Challenge - Forum 
 
-## Layout do projeto
-
-
-
-<!-- imagem  -->
-
 ## Descrição do projeto
 Este é o back-end de um fórum desenvolvido em Java e Spring Boot. O sistema permite que os usuários criem tópicos de discussão no fórum. Alguns dos principais recursos do sistema incluem:
 
 Criação de tópicos: Os usuários podem criar novos tópicos de discussão, fornecendo um título, conteúdo e categoria relevante.
 
-# Funcionalidades do projeto
+## Layout do projeto
 
-✔️ Cadastro de Usuários: Os usuários podem se cadastrar na plataforma, fornecendo informações básicas como nome, e-mail e senha.
+![VVideo_forum](./Video_forum.gif)
+
+
+<!-- imagem  -->
+
+# Funcionalidades do projeto
 
 ✔️ Autenticação de Usuários: Os usuários registrados podem fazer login na plataforma usando suas credenciais.
 
-✔️ `Criar um tópico`
-✔️` Listar tópicos`
-✔️ `Detalhar um tópico` 
-✔️` Desativar um tópico`
+✔️ Criar um tópico`
+✔️ Listar tópicos`
+✔️ Detalhar um tópico` 
+✔️ Desativar um tópico`
 
-# 📁 Acessar e rodar o  projeto 
 
-Faça um fork do projeto, após isso, abra o terminal do git bash, na pasta onde deseja salvar o projeto, e digite o seguinte comando:
+## 🛠 Tecnologias utilizadas
 
-git clone https://github.com/JacquelineCasali/One-Alura-Forum
+- **[Java 17]**
+- **[Spring Boot 3]**
+- **[Maven]**
+- **[MySQL]**
+- **[Hibernate]**
+- **[Flyway]**
+- **[Lombok]**
+- **[Postman]**
+- **[Xampp]**
 
-Crie uma base de dados no MySQL com o nome forum. Não é necessário criar as tabelas.
+## Para Clonar o projeto
+https://github.com/JacquelineCasali/Api-Sistema-Medico-Java.git
 
-Em seguida, abra o projeto na IDE de sua preferência, atualize o arquivo application.properties com os dados da base de dados criada e execute-o a partir do método main.
 
-Após executar o projeto, abra o seu navegador de internet e na barra de endereço, digite o seguinte comando:
+# 📁 Acessar a aplicação
 
+##### Enquanto o servidor está ligado, acesse o navegador e entre no endereço abaixo
 http://localhost:8080/swagger-ui/index.html
 
-Agora é só testar as funcionalidades do projeto. Não se esqueça de se registrar e fazer login para se autenticar na plataforma. Toda comunicação entre os endpoins é feita via token JWT.
 
-## Tecnologias utilizadas
-`-- Java` 
-`-- MySql Connector ` 
-`-- Maven` 
-`-- Lombok` 
-`-- Spring Boot 3` 
-`-- Postman` 
+## 👨🏻‍💻 Autenticação
+
+##### Acesse o método POST /login e pressione o botão "Try Out"
+##### Email e senha disponíveis para execução:
+```java
+
+{
+  "login": "adm@gmail.com",
+  "senha": "456789"
+}
+
+```
+##### Feito isto, copie o token recebido e insira-o na seção "Authorize" localizada na parte de cima da página
+##### Agora é só testar as funcionalidades!
+
+<br>
+
+<div align="center">
+
+![java](https://github.com/loolcas/OracleNE-Forum/assets/118030896/65a3142d-42d1-4e19-b844-683b90fc2d6f) ![spring](https://github.com/loolcas/OracleNE-Forum/assets/118030896/7bd00acb-a595-447b-8d13-f784f0a18c3e)  ![mysql](https://github.com/loolcas/OracleNE-Forum/assets/118030896/f30cb0ba-71af-402d-a388-f5459f8e75e8)
+
+</div>
+
+
 
 # Licença
-The MIT License (MIT)
+Projeto desenvolvido por Jacqueline Casali.
 
 Copyright ©️ 2023 - Fórum Alura
 

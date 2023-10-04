@@ -6,6 +6,7 @@ import forum.forum.dto.DadosTopicos.DadosAtualizarTopicos;
 import forum.forum.dto.DadosTopicos.DadosDetalhadosTopicos;
 import forum.forum.dto.DadosTopicos.DadosListaTopicos;
 import forum.forum.dto.DadosTopicos.DadosTopicos;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 @RestController
 // endereço
 @RequestMapping("topicos")
+//todos os dados precisa de autenticação
+@SecurityRequirement(name = "bearer-key")
 public class TopicosController {
 
     // para instanciar a classe
