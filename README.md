@@ -35,7 +35,7 @@ Criação de tópicos: Os usuários podem criar novos tópicos de discussão, fo
 - **[Xampp]**
 
 ## Para Clonar o projeto
-https://github.com/JacquelineCasali/Api-Sistema-Medico-Java.git
+https://github.com/JacquelineCasali/One-Alura-Forum.git
 
 
 # 📁 Acessar a aplicação
